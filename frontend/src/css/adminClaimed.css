@@ -1,0 +1,231 @@
+.admin-claimed-item-info::-webkit-scrollbar-track {
+    background: #cbab5a !important; /* Color of the scrollbar track */
+}
+
+.admin-claimed-item-info::-webkit-scrollbar-thumb {
+    background-color: #0b1d26 !important; /* Color of the scrollbar thumb */
+    border-radius: 10px !important; /* Rounded corners for the scrollbar thumb */
+}
+
+.admin-claimed-item-info::-webkit-scrollbar-thumb:hover {
+    background-color: #0b1d26 !important; /* Color of the scrollbar thumb on hover */
+}
+
+
+.admin-claimed-body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1d26;
+    color: #fff; /* Adjusted for better contrast */
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Sidebar */
+.admin-claimed-sidebar {
+    background-color: #3c4a51;
+    width: 250px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.admin-claimed-sidebar-button {
+    background-color: #d1bc85;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.admin-claimed-sidebar-button:hover {
+    background-color: #cda85b; /* Subtle hover change */
+    transform: scale(1.02); /* Gentle scaling effect */
+}
+
+.admin-claimed-sidebar-button.active {
+    background-color: #cda85b;
+    font-weight: bold;
+}
+
+/* Main Content */
+.admin-claimed-main-content {
+    flex: 1;
+    padding: 20px 30px; /* Added padding for spacing */
+    overflow-x: auto; /* Ensure table or large content fits */
+}
+
+.admin-claimed-main-title {
+    text-align: center;
+    font-size: 26px; /* Slightly larger for better focus */
+    margin-bottom: 25px;
+    color: #d1bc85;
+}
+
+/* Items Container */
+.admin-claimed-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Increased for a cleaner layout */
+
+}
+
+/* Item Card */
+.admin-claimed-item-card {
+    background-color: #d1bc85;
+    border-radius: 8px;
+    width: 300px;
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #0b1d26;
+    text-align: center;
+    transition: transform 0.3s;
+    /* overflow-y: auto; */
+}
+
+.admin-claimed-item-card:hover {
+    transform: scale(1.03); /* Subtle card hover effect */
+}
+
+.admin-claimed-item-image img {
+    width: 100%;
+    height: 180px; /* Reduced height for proportional spacing */
+    object-fit: cover;
+    border-radius: 6px; /* Matches card style */
+}
+
+.admin-claimed-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* Handling Overflowing Text */
+.admin-claimed-item-description {
+    font-size: 16px; /* Slightly larger text for readability */
+    line-height: 1.6;
+    color: #000000;
+    word-break: break-all;
+}
+
+.admin-claimed-item-title {
+    font-size: 16px;
+    font-weight: bold; /* Emphasize titles */
+    color: #000000;
+}
+
+.admin-claimed-contact-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* Subtle contrast */
+}
+
+.admin-claimed-contact-number {
+    font-size: 16px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+/* Actions */
+.admin-claimed-item-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.admin-claimed-delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.admin-claimed-delete-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Add a scaling hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .admin-claimed-items-container {
+        gap: 20px;
+    }
+    .admin-claimed-body{
+        flex-direction: column;
+    }
+
+    .admin-claimed-item-card {
+        width: 200px; /* Reduced width for smaller screens */
+    }
+    .admin-claimed-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+        align-items: center;
+    }
+    .admin-claimed-sidebar-button {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-claimed-sidebar {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        align-items: center;
+    }
+    .admin-claimed-sidebar-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .admin-claimed-main-content {
+        padding: 10px;
+    }
+
+    .admin-claimed-items-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-claimed-item-card {
+        width: 100%; /* Full-width cards on very small screens */
+    }
+
+    .admin-claimed-sidebar {
+        padding: 5px 0;
+        width: 100%;
+    }
+    .admin-claimed-sidebar-button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

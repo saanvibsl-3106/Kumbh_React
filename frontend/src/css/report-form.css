@@ -1,0 +1,109 @@
+/* Base Styles */
+.unique-report-form {
+    border: 3px solid #c5ad70;
+    color: #d0ad53;
+    position: fixed; 
+    width: 700px;
+    max-width: 100%; /* Make the form responsive to the screen size */
+    height: 800px;
+    max-height: 100vh; /* Ensure it fits within the viewport */
+    top: -30%; /* Start off-screen above */
+    left: 50%; 
+    transform: translate(-50%, 0); /* Center horizontally without vertical movement */
+    background: #0b1d26; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.5s ease, opacity 0.5s ease, top 0.5s ease;
+}
+
+/* Active state */
+.unique-report-form.active {
+    top: 50%; /* Move to center vertically */
+    transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
+    opacity: 1;
+    visibility: visible;
+}
+
+.unique-close-button {
+    position: absolute; 
+    top: 10px; 
+    right: 15px;
+    background: transparent; 
+    border: none;
+    font-size: 24px;
+    cursor: pointer; 
+    color: #d0ad53;
+}
+
+.unique-close-button:hover {
+    color: red; 
+}
+
+.unique-form {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    height: 95%; /* Make form fields take full height */
+}
+
+.unique-label {
+    margin-bottom: 5px;
+}
+
+.unique-input, .unique-select {
+    color: #ffffff;
+    background-color: #0b1d26;
+    width: 100%; 
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.new-btn {
+    margin: 0px;
+    width: 25%;
+}
+
+.unique-date-container {
+    display: flex;          
+    align-items: center;
+}
+
+.unique-label {
+    margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .unique-report-form {
+        width: 90%; /* Adjust form width for smaller screens */
+        height: auto; /* Let height adjust dynamically */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .unique-form {
+        height: auto; /* Allow the form to adjust its height */
+    }
+}
+
+@media (max-width: 480px) {
+    .unique-report-form {
+        width: 95%; /* Further adjust width for mobile screens */
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
+
+    .unique-close-button {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .unique-input, .unique-select {
+        height: 40px; /* Adjust input height for better fit */
+    }
+}

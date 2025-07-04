@@ -1,0 +1,235 @@
+.rootClass {
+    background-color: #0b1d26;
+    color: #b4b1ab;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #0b1d26;
+    border-radius: 10px;
+    position: relative;
+}
+
+.blog-container1 {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #0b1d26;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.blog-content {
+    max-width: 50%;
+    position: relative;
+}
+
+.blog-place-name {
+    font-size: 60px;
+    color: #d0ad53;
+    font-weight: 500;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 200px;
+    margin-right: -150px;
+}
+
+.blog-ratings {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.blog-stars {
+    font-size: 24px;
+    color: #d4af37;
+    margin-right: 10px;
+}
+
+.blog-rating-value {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.blog-global-ratings {
+    font-size: 16px;
+    color: #a7b2c3;
+}
+
+.blog-header-text {
+    margin-top: 20px;
+    color: #d4af37;
+    line-height: 1.5;
+}
+
+.blog-image-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.blog-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.blog-background-layer {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 48, 48, 0.5);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.blog-background-layer1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.blog-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    word-break: break-all;
+}
+
+.blog-author {
+    color: #d1bc85;
+    padding-left: 200px;
+    text-align: center; /* Centered for smaller screens */
+}
+
+.blog-fav-icons i {
+    margin: 0px 0px 10px 30px;
+    font-size: 40px;
+    color: #d1bc85;
+    
+}
+.blog-fav-icons {
+    display: flex;
+    align-items: center;
+}
+.blog-fav-icons i{
+    cursor: pointer;
+}
+.blog-fav-icons p{
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.blog-likeCount {
+    font-size: 20px;
+    color: #d1bc85;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 20px;
+        flex-direction: column-reverse; /* Stack content vertically */
+
+        align-items: center;
+    }
+
+    .blog-content {
+        max-width: 100%;
+        text-align: center; /* Center text for a better mobile layout */
+        margin-bottom: 20px;
+    }
+
+    .blog-place-name {
+        font-size: 60px; /* Smaller font size for mobile */
+        letter-spacing: 5px;
+        margin-right: 0; /* Remove negative margin for better alignment */
+        white-space: normal; /* Allow text wrapping */
+        margin-bottom: 0;
+    }
+
+    .blog-header-text {
+        font-size: 16px; /* Smaller font size for readability */
+    }
+
+    .blog-image-container {
+        width: 300px; /* Smaller image size for mobile */
+        height: 300px;
+        margin-top: 20px; /* Reduced margin for a tighter layout */
+    }
+
+    .blog-text {
+        font-size: 16px; /* Adjusted text size */
+    }
+
+    .blog-fav-icons i {
+        font-size: 30px; /* Reduced icon size */
+        margin: 0 10px; /* Adjusted margins */
+    }
+
+    .blog-likeCount {
+        font-size: 16px;
+    }
+
+    .blog-author {
+        font-size: 16px;
+        padding-left: 0; /* Removed padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-container {
+        padding: 15px;
+    }
+
+    .blog-place-name {
+        font-size: 40px; /* Further reduced font size */
+        letter-spacing: 3px;
+    }
+
+    .blog-header-text {
+        font-size: 14px; /* Adjusted for smaller screens */
+    }
+
+    .blog-text {
+        font-size: 14px; /* Smaller text size */
+    }
+
+    .blog-image-container {
+        width: 100%;
+        height: auto; /* Auto height for responsive images */
+    }
+
+    .blog-fav-icons i {
+        font-size: 24px; /* Smaller icons */
+    }
+
+    .blog-likeCount {
+        font-size: 14px;
+    }
+}

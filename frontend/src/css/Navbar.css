@@ -1,0 +1,141 @@
+/* Navbar Container */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+    z-index: 10; /* Increased z-index to keep it on top */
+    background-color: rgba(2, 8, 10, 0.8);
+    transition: background-color 0.5s ease;
+    position: relative; /* Ensure positioning context */
+}
+
+.logo{
+    display: flex;
+}
+.logo .logoimg img{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.logotxt img{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Items */
+.nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+.nav-items li a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.nav-items li a:hover {
+    text-decoration: underline;
+}
+
+/* Sign-Up Section */
+.sign-up {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+.sign-up a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign-up i {
+    margin-right: 8px;
+}
+
+/* Active Link Style */
+.nav-items .activeg a {
+    color: #d0ad53;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 860px) {
+    .navbar {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on smaller screens */
+    }
+
+    .nav-items {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute; /* Absolute positioning */
+        top: 60px; /* Adjust this value if needed */
+        left: 0;
+        width: 100%;
+        background-color: rgba(2, 8, 10, 0.9);
+        padding: 20px 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+    }
+
+    .nav-items.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-items li {
+        margin: 10px 0; /* Add margin between items */
+        text-align: center; /* Center align items */
+    }
+
+    .sign-up {
+        align-self: flex-end; /* Align sign-up to the bottom */
+        margin-top: 10px; /* Add margin above sign-up */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 5px; /* Further adjust padding for very small screens */
+    }
+
+    .logo a {
+        font-size: 20px; /* Smaller font size for logo */
+    }
+
+    .nav-items li a {
+        font-size: 14px; /* Reduce font size for links */
+    }
+
+    .sign-up {
+        font-size: 18px; /* Smaller font size for sign-up */
+    }
+}

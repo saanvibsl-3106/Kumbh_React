@@ -1,0 +1,129 @@
+.text-white {
+    color: #fff;
+}
+
+.text-smaller {
+    font-size: 13px;
+    line-height: 1.5; /* Adjusted for better readability */
+    margin-bottom: 7px;
+}
+
+.sec-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
+    background: #0b1d26;
+    padding: 20px; /* Add padding for spacing */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.text-yellow {
+    color: #d1bc85;
+}
+
+.right-bot {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-bot ul {
+    color: white;
+    list-style-type: none;
+    padding: 0; /* Reset default padding */
+}
+
+.right-bot ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.right-bot ul li {
+    line-height: 1.8; /* Adjusted line height for better spacing */
+    margin-bottom: 10px;
+}
+
+.heading-bot {
+    line-height: 1.8; /* Adjusted for consistency */
+    margin-bottom: 10px;
+}
+
+.left-list {
+    margin-right: 50px; /* Reduced right margin for smaller screens */
+}
+
+.class-up {
+    margin-bottom: 80px;
+}
+
+.text-grey {
+    color: #848e93;
+}
+
+.container-bot {
+    padding: 0em 10em; /* Adjusted padding for larger screens */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    
+    .sec-foot {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .left-list {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add space below */
+    }
+
+    .container-bot {
+        padding: 0em 5em; /* Reduce padding */
+    }
+    .right-bot{
+        display: flex;
+        /* border: 5px solid red; */
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-foot {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .left-list {
+        margin-bottom: 15px; /* Add space below */
+    }
+
+    .right-bot ul li {
+        line-height: 1.5; /* Decrease line height for better spacing */
+    }
+
+    .container-bot {
+        padding: 0em 2em; /* Further reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-smaller {
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .sec-foot {
+        padding: 5px; /* Minimal padding for small screens */
+    }
+
+    .right-bot ul {
+        padding: 0; /* Reset padding */
+    }
+
+    .heading-bot {
+        line-height: 1.5; /* Reduce line height for small screens */
+    }
+
+    .class-up {
+        margin-bottom: 50px; /* Reduce margin */
+    }
+}

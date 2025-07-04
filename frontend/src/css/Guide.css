@@ -1,0 +1,119 @@
+.prayagraj-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #b4b1ab;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #0b1d26;
+}
+
+.guide-p {
+  font-size: 20px;
+}
+
+.guide-header {
+  display: flex;
+}
+
+.prayagraj-title {
+  font-size: 2.5em;
+  color: #d0ad53;
+  font-weight: bold;
+  text-align: left;
+}
+
+.guide-section-title {
+  color: #d0ad53;
+}
+
+.prayagraj-quote {
+  padding: 20px;
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #d1bc85;
+  max-width: 800px;
+}
+
+.prayagraj-image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.prayagraj-image {
+  width: 100%;
+  max-width: 400px; /* Set max-width for responsiveness */
+  max-height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prayagraj-content p {
+  max-width: 1200px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .prayagraj-title {
+      font-size: 2em; /* Adjust title size for smaller screens */
+      text-align: center; /* Center-align title */
+  }
+
+  .prayagraj-image {
+      width: 80%; /* Make image responsive */
+      max-width: 100%;
+  }
+
+  .prayagraj-quote {
+      font-size: 1em; /* Reduce font size for smaller screens */
+      padding: 10px;
+  }
+
+  .guide-p {
+      font-size: 16px; /* Adjust paragraph text size */
+  }
+
+  .prayagraj-container {
+      padding: 15px; /* Reduce padding */
+  }
+
+  .guide-header {
+      flex-direction: column-reverse; /* Stack header items vertically */
+      align-items: center;
+  }
+
+  .prayagraj-content p {
+      font-size: 14px; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .prayagraj-title {
+      font-size: 1.6em; /* Further reduce title size */
+  }
+
+  .prayagraj-image {
+      width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .prayagraj-quote {
+      font-size: 0.9em; /* Further reduce font size */
+  }
+
+  .guide-p {
+      font-size: 14px; /* Adjust for smaller screens */
+  }
+
+  .prayagraj-container {
+      padding: 10px; /* Further reduce padding */
+  }
+
+  .prayagraj-content p {
+      font-size: 12px; /* Adjust paragraph font size */
+  }
+}

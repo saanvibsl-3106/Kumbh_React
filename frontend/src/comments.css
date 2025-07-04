@@ -1,0 +1,187 @@
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b1d26; /* Deep blue background */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.comments-page {
+  width: 100%;
+  max-width: 900px;
+  background-color: #3c4a5186; /* Slate gray background for the card */
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for more prominence */
+  padding: 40px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #d1bc85; /* Gold-like color for titles */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #a9a9a9; /* Light gray for subtitles */
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.comment-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusted to space out content */
+  gap: 20px;
+  border-radius: 15px; /* Rounded edges for comment items */
+  padding: 20px;
+  margin-bottom: 20px; /* Space between comment items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  border-bottom: 2px solid #d1bc85;
+}
+
+.comment-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Stronger hover effect */
+  background-color: #556d77; /* Muted slate color on hover */
+}
+
+.blog-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.blog-image:hover {
+  transform: scale(1.1); /* Larger image on hover */
+}
+
+.comment-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d1bc85; /* Gold-like color for headings */
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.user-comment {
+  font-size: 16px;
+  color: #ffffff; /* White text for readability */
+  line-height: 1.8;
+}
+
+/* New Styles for Edit and Delete Buttons */
+.comment-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  background-color: #d1bc85; /* Gold-like color for buttons */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #b0a15f; /* Darker gold for hover effect */
+}
+
+.delete-btn:hover {
+  background-color: #9e7f5b; /* Darker brown for delete button */
+}
+
+.comment-item::before {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #ffcc00; /* Bright accent for icons */
+}
+
+.page-title::after {
+  font-size: 25px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .comments-page {
+    padding: 25px;
+  }
+
+  .comment-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 15px; /* Less space between items */
+  }
+
+  .blog-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .comment-details {
+    align-items: flex-start;
+  }
+
+  .comment-actions {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comments-page {
+    padding: 15px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .comment-item {
+    padding: 10px;
+    margin-bottom: 10px; /* Reduced space between items */
+  }
+
+  .blog-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .blog-heading {
+    font-size: 18px;
+  }
+
+  .user-comment {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,122 @@
+
+/* Body Styling */
+/* body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #283244, #1b2d37);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Main container styling */
+.about-us-body{
+    background-color: #0b1d26;
+}
+.about-us-main {
+    
+    /* max-width: 1200px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* margin-bottom: 100px; */
+}
+
+/* About Us Section */
+.about-us-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #d1b285;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-us-content {
+    max-width: 600px;
+}
+
+.about-us-content h2 {
+    color: #444444;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-us-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.about-us-image {
+    flex-shrink: 0;
+}
+
+.about-us-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Stats Section Styling */
+.about-us-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #d1b285;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-us-stat h3 {
+    font-size: 2.5rem;
+    color: #bf770c;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.about-us-stat p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us-content, .about-us-image {
+        max-width: 100%;
+    }
+    .about-us-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-us-stats {
+        flex-direction: column;
+    }
+}

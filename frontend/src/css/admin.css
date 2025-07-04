@@ -1,0 +1,175 @@
+.admin-body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1d26;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    background-color: #3c4a51;
+    width: 250px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.admin-sidebar-button {
+    background-color: #d1bc85;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.admin-sidebar-button:hover {
+    background-color: #d0ad53;
+    transform: scale(1.05);
+}
+.admin-sidebar-button.active {
+    background-color: #d0ad53;
+    font-weight: bold;
+}
+
+/* Main Content */
+.admin-main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.admin-main-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.admin-data-table {
+    width: 100%;
+    max-width: 1300px;
+    border-collapse: collapse;
+    background-color: #23333b;
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed; /* Ensure table adapts to smaller screens */
+}
+.admin-table-header,
+.admin-table-cell {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    word-wrap: break-word; /* Allow text to break and fit within cells */
+}
+.admin-table-cell a {
+    color: #d0ad53;
+}
+.admin-table-header {
+    background-color: #3c4851;
+    font-weight: bold;
+}
+.admin-table-cell:last-child {
+    text-align: center;
+}
+.admin-delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.admin-delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .admin-body {
+        flex-direction: column;
+    }
+    .admin-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+        align-items: center;
+    }
+    .admin-sidebar-button {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .admin-main-content {
+        padding: 15px;
+    }
+    .admin-main-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-sidebar {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        align-items: center;
+    }
+    .admin-sidebar-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .admin-main-content {
+        padding: 10px;
+    }
+    .admin-main-title {
+        font-size: 20px;
+    }
+    .admin-data-table {
+        width: 100%;
+    }
+    .admin-table-header,
+    .admin-table-cell {
+        padding: 10px;
+        font-size: 9px; /* Adjust font size for smaller screens */
+    }
+    .admin-table-cell {
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-sidebar {
+        padding: 5px 0;
+        width: 100%;
+    }
+    .admin-sidebar-button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .admin-main-title {
+        font-size: 18px;
+    }
+    .admin-data-table {
+        font-size: 12px;
+        width: 100%;
+        overflow-x: auto; /* Allow horizontal scrolling on very small screens */
+    }
+    .admin-table-header,
+    .admin-table-cell {
+        padding: 8px;
+    }
+    .admin-delete-button {
+        padding: 6px 10px;
+    }
+}

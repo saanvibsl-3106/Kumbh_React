@@ -1,0 +1,232 @@
+/* Base Styles */
+.userblog-body{
+    min-height: 69vh;
+    background-color: #0b1d26;
+}
+.blog-header-text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.blog-image-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.blog-background-layer {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 48, 48, 0.5);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.blog-background-layer1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.user-blog-icons{
+    color: #777;
+    cursor: pointer;
+    margin-left: 10px
+}
+.blog-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.blog-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.blog-fav-icons i {
+    margin: 0 0 10px 30px;
+    font-size: 40px;
+    color: #d1bc85;
+}
+
+.blog-likeCount {
+    font-size: 20px;
+    color: #d1bc85;
+}
+
+.like {
+    background-color: #0b1d26;
+    border: none;
+}
+
+.like i:hover {
+    cursor: pointer;
+}
+
+.author {
+    color: grey;
+    text-align: right;
+}
+
+.user-blog-header {
+    background-color: #0b1d26;
+    display: flex;
+    justify-content: space-between;
+    padding:0 100px
+}
+
+.blog-body {
+    word-break: break-word;
+}
+
+.heading-blog {
+    color: #d0ad53;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.unique-input .ql-editor::before {
+    color: white !important;
+    opacity: 0.5;
+}
+
+.input-search {
+    background-color: #0b1d26;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #d1bc85;
+    padding: 5px;
+    color: white;
+}
+
+.mg-5 {
+    margin-right: 30px;
+}
+
+.blog-input-desc {
+    height: 300px;
+    border: none !important;
+}
+
+.unique-input .ql-editor::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+.unique-input .ql-editor::-webkit-scrollbar-track {
+    background: #0b1d26; /* Color of the scrollbar track */
+}
+
+.unique-input .ql-editor::-webkit-scrollbar-thumb {
+    background-color: #d1bc85; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.unique-input .ql-editor::-webkit-scrollbar-thumb:hover {
+    background-color: #b5912b; /* Color of the scrollbar thumb on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .user-blog-header {
+        padding: 0;
+    }
+    .blog-image-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .heading-blog {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .blog-fav-icons i {
+        font-size: 35px;
+    }
+
+    .blog-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-image-container {
+        width: 300px;
+        height: 300px;
+        margin-top: 100px;
+    }
+
+    .heading-blog {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .input-search {
+        width: 150px;
+        height: 30px;
+    }
+
+    .blog-fav-icons i {
+        font-size: 30px;
+    }
+
+    .blog-likeCount {
+        font-size: 18px;
+    }
+
+    .blog-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-image-container {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+
+    .heading-blog {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .blog-fav-icons i {
+        font-size: 25px;
+        margin: 0 0 5px 20px;
+    }
+
+    .input-search {
+        width: 120px;
+        height: 25px;
+    }
+
+    .blog-text {
+        font-size: 14px;
+    }
+
+    .blog-likeCount {
+        font-size: 16px;
+    }
+}
