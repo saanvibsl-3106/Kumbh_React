@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Kumbh Mela Tourism Website
 
 A comprehensive tourism platform for Kumbh Mela, featuring user authentication, blog posts, lost and found services, attraction details, and more.
@@ -158,6 +158,4 @@ Runs only the backend server.
 ### `npm run build`
 
 Builds the frontend application for production to the `frontend/build` folder.
-=======
-# kumbha_mela_master
->>>>>>> 0a23225fdd58d5adc2684a5ebcec6a350e88f2f4
+
