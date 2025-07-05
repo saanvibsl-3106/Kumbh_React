@@ -101,7 +101,7 @@ backend/
 1. Clone the repository:
    ```bash
    git clone https://github.com/saanvibsl-3106/Kumbh_React.git
-   cd kumbh-react
+   cd Kumbh_React
    ```
 
 2. Install dependencies for the entire project:
