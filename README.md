@@ -100,7 +100,7 @@ backend/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/rachitkansal-dev/kumbh-react.git
+   git clone https://github.com/saanvibsl-3106/Kumbh_React.git
    cd kumbh-react
    ```
 
